@@ -1,8 +1,73 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* npx nodemon start --> run the program */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.header-menu{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-menu ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.header-menu ul li a{
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #82ff1f;
+  padding: 15px;
+}
+
+.footer-menu{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-menu ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.footer-menu ul li a{
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #82ff1f;
+  padding: 15px;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #111111;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1{
+  font-size: 130px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1.5px;
 }
