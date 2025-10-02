@@ -27,16 +27,18 @@
         <h2>I'd love to hear from you!</h2>
         <div class="sec1c-container">
             <div class="box1c">
-                <p>my email here</p>
+                <p>myemailhere@email.com</p>
             </div>
             <div class="box2c">
-                <p>my socials here</p>
+                <p>Linkedin</p>
+                <p>GitHub</p>
             </div>
         </div>
     </section>
     <section class="sec2c">
         <div class="sec2c-map">
-            <p>google maps displaying my location</p>
+            <p>google maps displaying my location here </p>
+            <div id="googleMap"></div>
         </div>
     </section>
 
@@ -50,5 +52,18 @@
         </nav>
     </menu>
     </footer>
+
+    <script>
+        function myMap() {
+        var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=**add my api key here**&callback=myMap"></script>
+
   </body>
 </html>
