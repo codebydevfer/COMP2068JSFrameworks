@@ -61,7 +61,7 @@
   background-color: #82ff1f;
   border-radius: 30px;
   border: none;
-  padding: 10px;
+  padding: 10px 22px;
 }
 
 /* General Hero Styling */
@@ -94,7 +94,30 @@
 }
 
 /* Home Page */
+.atw-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  height: 4%;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
 
+.atw-card .ball{
+  width: 12px;
+  height: 12px;
+  background-color: #82ff1f;
+  border-radius: 50px;
+}
+
+.atw-card p{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+  text-wrap: nowrap;
+}
 .sec1h{
   display: flex;
   width: 100%;
@@ -119,13 +142,26 @@
   justify-content: center;
 }
 
-.box1h p, .box2h p, .box3h p{
+.sec1-box-container-h h3{
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   width: 80%;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 20px;
+  font-weight: normal;
+  text-wrap: nowrap;
+  border-bottom: 1px solid #fff;
+}
+
+.box1h p, .box2h p, .box3h p{
+  color: #fff;
+  font-size: 18px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: lighter;
 }
 
 .box1h, .box2h, .box3h{
@@ -175,6 +211,30 @@
   justify-content: center;
 }
 
+.sec2-left-side-h .atw-card2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  height: 34px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.sec2-left-side-h .atw-card2 .ball{
+  width: 12px;
+  height: 12px;
+  background-color: #82ff1f;
+  border-radius: 50px;
+}
+
+.sec2-left-side-h .atw-card2 p{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+  text-wrap: nowrap;
+}
+
 .sec3h{
   display: flex;
   width: 100%;
@@ -199,13 +259,26 @@
   justify-content: center;
 }
 
+.sec3-box-container-h h3{
+  color: #fff;
+  font-size: 25px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: normal;
+  /* text-wrap: nowrap; */
+  border-bottom: 1px solid #fff;
+}
+
 .box4h p, .box5h p, .box6h p{
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   width: 80%;
   align-items: center;
   justify-content: center;
   padding: 50px;
+  font-weight: lighter;
 }
 
 .box4h, .box5h, .box6h{
@@ -429,3 +502,6 @@
 .sec2c{
   height: auto;
 }
+
+/* widht of title same as the width of section */
+/* make available to work icon */
