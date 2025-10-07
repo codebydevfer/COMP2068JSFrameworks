@@ -6,6 +6,10 @@
   font-family: Helvetica,Verdana,Arial,sans-serif;
 }
 
+body{
+  scroll-behavior: smooth;
+}
+
 .header-menu{
   display: flex;
   width: 100%;
@@ -14,6 +18,7 @@
   align-items: center;
   justify-content: flex-end;
   position: fixed; /* maybe use this */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.114);
 }
 
 .header-menu ul{
@@ -37,7 +42,8 @@
   height: 100px;
   background-color: #fff;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  border-top: 1px solid rgba(0, 0, 0, 0.114);
 }
 
 .footer-menu ul{
@@ -52,7 +58,20 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #82ff1f;
-  padding: 15px;
+  padding: 5px;
+}
+
+
+.github-logo img{
+  width: 25px;
+  height: 25px;
+  padding: 0 10px;
+}
+
+.linkedin-logo img{
+  width: 25px;
+  height: 25px;
+  padding: 0 10px;
 }
 
 .contact-button{
@@ -118,6 +137,33 @@
   font-weight: lighter;
   text-wrap: nowrap;
 }
+
+.atw-card3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+
+.atw-card3 .ball{
+  width: 12px;
+  height: 12px;
+  background-color: #82ff1f;
+  border-radius: 50px;
+  /* margin-right: 5px; */
+}
+
+.atw-card3 p{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+  text-wrap: nowrap;
+}
+
 .sec1h{
   display: flex;
   width: 100%;
@@ -301,17 +347,21 @@
 }
 
 .abt-hero-left{
-  width: 100%;
+  width: 60%;
   height: auto;
+  text-align: center;
+  /* padding: 20px; */
 }
 
 .abt-hero-left img{
-  width: 250px;
+  width: 266.6px;
   height: 400px;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .abt-hero-right{
-  width: 100%;
+  width: 40%;
   height: auto;
 }
 
@@ -332,7 +382,7 @@
   width: 80%;
   height: auto;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: flex-start; */
   align-items: center;
 }
 
@@ -340,14 +390,41 @@
   display: flex;
   width: 50%;
   height: auto;
-  justify-content: center;
+  /* justify-content: flex-start; */
   align-items: center;
+  flex-direction: column;
 }
 
 .sec1a-left h2{
   font-size: 50px;
   font-weight: normal;
   padding: 10px;
+}
+
+.atw-card2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
+  height: 30px;
+  border: 1px solid #111111;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+
+.atw-card2 .ball{
+  width: 12px;
+  height: 12px;
+  background-color: #82ff1f;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.atw-card2 p{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+  text-wrap: nowrap;
 }
 
 .sec1a-right{
@@ -407,6 +484,13 @@
   padding: 20px;
 }
 
+.sec2a-row1 h3, .sec2a-row2 h3{
+  text-align: center;
+}
+
+.sec2a-row1 p, .sec2a-row2 p{
+}
+
 .sec2a-box1, .sec2a-box2, .sec2a-box3, .sec2a-box4, .sec2a-box5, 
 .sec2a-box6, .sec2a-box7, .sec2a-box8, .sec2a-box9, .sec2a-box10{
   width: 200px;
@@ -455,6 +539,7 @@
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+  color: #fff;
 }
 
 /* Contact Me */
@@ -504,4 +589,3 @@
 }
 
 /* widht of title same as the width of section */
-/* make available to work icon */
