@@ -34,6 +34,12 @@ body{
   text-transform: uppercase;
   color: #82ff1f;
   padding: 15px;
+  transition: all .2s linear;
+}
+
+.header-menu ul li a:hover{
+  transition: all .2s linear;
+  color: #111111;
 }
 
 .footer-menu{
@@ -61,17 +67,30 @@ body{
   padding: 5px;
 }
 
-
 .github-logo img{
   width: 25px;
   height: 25px;
   padding: 0 10px;
+  transform: scale(1);
+  transition: all .2s linear;
+}
+
+.github-logo img:hover{
+  transition: .2s all linear;
+  transform: scale(1.2);
 }
 
 .linkedin-logo img{
   width: 25px;
   height: 25px;
   padding: 0 10px;
+  transform: scale(1);
+  transition: all .2s linear;
+}
+
+.linkedin-logo img:hover{
+  transition: .2s all linear;
+  transform: scale(1.2);
 }
 
 .contact-button{
@@ -81,6 +100,15 @@ body{
   border-radius: 30px;
   border: none;
   padding: 10px 22px;
+  transition: all .2s linear;
+  transform: scale(1);
+}
+
+.contact-button:hover{
+  transition: all .2s linear;
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #c1ff8f;
 }
 
 /* General Hero Styling */
@@ -142,7 +170,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 27%;
+  width: 29%;
   height: 30px;
   border: 1px solid #fff;
   border-radius: 50px;
@@ -157,9 +185,9 @@ body{
   /* margin-right: 5px; */
 }
 
-.atw-card3 p{
+.atw-card3-p{
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: lighter;
   text-wrap: nowrap;
 }
@@ -244,7 +272,7 @@ body{
 
 .sec2h p{
   color: #fff;
-  font-size: 20px;
+  /* font-size: 20px; */
   padding: 15px;
 }
 
@@ -521,6 +549,32 @@ body{
 
 }
 
+.atw-card-java, .atw-card-python, .atw-card-js{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9%;
+  height: 24px;
+  border: 1px solid #111111;
+  border-radius: 50px;
+  margin: 15px 0;
+}
+
+.atw-card-java .ball, .atw-card-python .ball, .atw-card-js .ball{
+  width: 12px;
+  height: 12px;
+  background-color: #82ff1f;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.atw-card-java p, .atw-card-python p, .atw-card-js p{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+  text-wrap: nowrap;
+}
+
 .sec1p-row1, .sec1p-row2, .sec1p-row3{
   display: flex;
   width: 80%;
@@ -540,6 +594,31 @@ body{
   margin: 10px;
   border-radius: 10px;
   color: #fff;
+}
+
+.more-p-text{
+  font-size: 24px;
+  font-weight: normal;
+  padding: 20px;
+}
+
+.more-p-button{
+  font-size: 16px;
+  color: #111111;
+  background-color: #82ff1f;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 22px;
+  margin-bottom: 10px;
+  transition: all .2s linear;
+  transform: scale(1);
+}
+
+.more-p-button:hover{
+  transition: all .2s linear;
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #c1ff8f;
 }
 
 /* Contact Me */
@@ -577,11 +656,45 @@ body{
   border-radius: 10px;
 }
 
-.box1c p, .box2c p{
+.box1c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1c p{
   color: #fff;
   font-size: 25px;
   text-align: center;
-  font-weight: normal;
+  font-weight: lighter;
+}
+
+.box2c{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.box2c a{
+  padding: 0 20px;
+}
+
+.box2c a img{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  padding: 1.5px;
+  margin: 10px;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: all .2s linear;
+}
+
+.box2c a img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all .2s linear;
 }
 
 .sec2c{
