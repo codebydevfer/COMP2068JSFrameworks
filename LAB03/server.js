@@ -33,6 +33,10 @@ app.use((req, res, next) => {
         res.writeHead(200, {'Content-Type': 'text/plain'});
         res.end(`${x} / ${y} = ${result}`);
     }
+    else{
+        res.writeHead(200, {'Content-type': 'text/plain'});
+        res.end('Error, method used not listed.');
+    }
 }
 else{
     next();
