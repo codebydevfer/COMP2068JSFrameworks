@@ -1,0 +1,21 @@
+<h1>Edit Pokémon</h1>
+
+<div class="card p-4 shadow-sm">
+    <form method="POST">
+
+        <div class="mb-3">
+            <label class="form-label">Pokémon Name</label>
+            <input type="text" name="name" class="form-control"
+                   value="{{pokemon.name}}" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Image URL</label>
+            <input type="text" name="image" class="form-control"
+                   value="{{pokemon.image}}" required>
+        </div>
+
+        <button class="btn btn-primary">Save Changes</button>
+        <a href="/pokedex" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

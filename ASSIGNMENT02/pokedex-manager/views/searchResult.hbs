@@ -1,0 +1,19 @@
+<div class="text-center">
+
+    <h2 class="mb-4">Search Result</h2>
+
+    <img src="{{pokemon.image}}" alt="{{pokemon.name}}" class="img-fluid mb-3" style="max-width:150px;">
+
+    <h3 class="text-capitalize">{{pokemon.name}}</h3>
+    <p><strong>ID:</strong> {{pokemon.id}}</p>
+
+    <form action="/add" method="POST">
+        <input type="hidden" name="id" value="{{pokemon.id}}">
+        <input type="hidden" name="name" value="{{pokemon.name}}">
+        <input type="hidden" name="image" value="{{pokemon.image}}">
+
+        <button class="btn btn-success">Add to My Pokédex</button>
+    </form>
+
+    <a href="/" class="btn btn-secondary mt-3">Back</a>
+</div>

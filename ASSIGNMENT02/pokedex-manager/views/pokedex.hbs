@@ -1,0 +1,26 @@
+<h1 class="mb-4">My Pokédex</h1>
+
+{{#if pokedex.length}}
+    <div class="row">
+        {{#each pokedex}}
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">{{this.name}}</h5>
+                        <p class="card-text"><strong>ID:</strong> {{this.id}}</p>
+
+                        <a href="/edit/{{this.id}}" class="btn btn-warning btn-sm">Edit</a>
+
+                        <form action="/delete/{{this.id}}" method="POST" class="d-inline">
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{else}}
+    <div class="alert alert-info">Your Pokédex is empty.</div>
+{{/if}}

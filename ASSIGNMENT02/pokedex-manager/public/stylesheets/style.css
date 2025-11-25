@@ -1,8 +1,33 @@
-body {
-  padding: 50px;
+*{
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.global-header{
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.global-header ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.global-header li{
+  list-style: none;
+}
+
+.global-header a{
+  text-decoration: none;
+  padding: 15px;
+}
+
+.header-title{
+  color: bisque;
+  font-size: 40px;
 }
