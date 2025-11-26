@@ -3,7 +3,13 @@ const mongoose = require('mongoose');
 const PokemonSchema = new mongoose.Schema({
     id: Number,
     name: String,
-    image: String
+    image: String,
+    types: [String], //has to be an array because pokemon types can vary betwen 1 and 2
+    hp: Number,
+    attack: Number,
+    defense: Number,
+    height: Number,
+    weight: Number
 });
 
 module.exports = mongoose.model("Pokemon", PokemonSchema);

@@ -25,7 +25,13 @@ router.get('/search', async function(req, res) {
     const pokemon = {
       id: response.data.id,
       name: response.data.name,
-      image: response.data.sprites.front_default
+      image: response.data.sprites.front_default,
+      types: response.data.types.map(t => t.type.name),
+      hp: response.data.stats.find(s => s.stat.name === "hp").base_stat,
+      attack: response.data.stats.find(s => s.stat.name === "attack").base_stat,
+      defense: response.data.stats.find(s => s.stat.name === "defense").base_stat,
+      height: response.data.height / 10, //converted to meters
+      weight: response.data.weight / 10 //converted to kg
     };
 
     res.render("searchResult", { pokemon });
@@ -42,7 +48,13 @@ router.post('/add', async (req, res) => {
     await Pokemon.create({
       id: req.body.id,
       name: req.body.name,
-      image: req.body.image
+      image: req.body.image,
+      types: req.body.types,
+      hp: req.body.hp,
+      attack: req.body.attack,
+      defense: req.body.defense,
+      height: req.body.height,
+      weight: req.body.weight
     });
     res.redirect('/pokedex');
   } catch (err) {

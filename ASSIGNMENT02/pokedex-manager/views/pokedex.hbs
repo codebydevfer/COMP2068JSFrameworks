@@ -6,10 +6,19 @@
       <div class="col-md-3">
         <div class="card mb-4 shadow-sm">
           <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}" />
-
           <div class="card-body">
             <h5 class="card-title text-capitalize">{{this.name}}</h5>
             <p class="card-text"><strong>ID:</strong> {{this.id}}</p>
+            <p>Types:
+              {{#each this.types}}
+                {{this}}
+              {{/each}}
+            </p>
+            <p>HP: {{this.hp}}</p>
+            <p>Attack: {{this.attack}}</p>
+            <p>Defense: {{this.defense}}</p>
+            <p>Height: {{this.height}} m</p>
+            <p>Weight: {{this.weight}} Kg</p>
 
             <a href="/edit/{{this.id}}" class="btn btn-warning btn-sm">Edit</a>
 

@@ -6,11 +6,23 @@
 
     <h3 class="text-capitalize">{{pokemon.name}}</h3>
     <p><strong>ID:</strong> {{pokemon.id}}</p>
+    <p><strong>Types:</strong>{{pokemon.types}}</p>
+    <p><strong>HP:</strong> {{pokemon.hp}}</p>
+    <p><strong>Attack:</strong> {{pokemon.attack}}</p>
+    <p><strong>Defense:</strong> {{pokemon.defense}}</p>
+    <p><strong>Height:</strong> {{pokemon.height}} m</p>
+    <p><strong>Weight:</strong> {{pokemon.weight}} Kg</p>
 
     <form action="/add" method="POST">
         <input type="hidden" name="id" value="{{pokemon.id}}">
         <input type="hidden" name="name" value="{{pokemon.name}}">
         <input type="hidden" name="image" value="{{pokemon.image}}">
+        <input type="hidden" name="types" value="{{pokemon.types}}">
+        <input type="hidden" name="hp" value="{{pokemon.hp}}">
+        <input type="hidden" name="attack" value="{{pokemon.attack}}">
+        <input type="hidden" name="defense" value="{{pokemon.defense}}">
+        <input type="hidden" name="height" value="{{pokemon.height}}">
+        <input type="hidden" name="weight" value="{{pokemon.weight }}">
 
         <button class="btn btn-success">Add to My Pokédex</button>
     </form>
