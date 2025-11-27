@@ -9,7 +9,7 @@
 
 .global-header{
   display: flex;
-  height: auto;
+  height: 100px;
   width: 100%;
   flex-direction: row;
   align-items: center;
@@ -69,7 +69,7 @@
   display: flex;
   height: 100vh;
   width: 100%;
-  background-color: rgb(143, 143, 255);
+  background-color: rgb(216, 26, 26);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -78,19 +78,287 @@
 .home-pg-hero h1{
   font-size: 40px;
   padding: 10px;
+  color: #fff;
 }
 
 .home-pg-hero p{
   font-size: 20px;
   padding: 10px;
   padding-bottom: 30px;
+  color: #fff;
 }
 
-.home-pg-hero a{
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-  background-color: aqua;
+.home-pg-hero a img{
+  width: 120px;
+  height: auto;
+  transform: scale(1);
+  transition: .2s all linear;
+}
+
+.home-pg-hero a img:hover{
+  transform: scale(1.1);
+}
+
+/* Add/Search Page */
+
+.search-hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(216, 26, 26);
+}
+
+.search-hero h1{
+  color: #fff;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.search-hero form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-hero .err{
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.search-hero form{
+  padding: 20px;
+}
+
+.search-hero form input{
+  border: none;
+  outline: none;
   padding: 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  margin: 15px;
+}
+
+.search-hero form input::placeholder{
+  text-align: center;
+}
+
+.search-hero form button{
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px;
+  width: 50%;
+  transition: .2s all linear;
+  transform: scale(1);
+}
+
+.search-hero form button:hover{
+  transform: scale(0.90);
+  cursor: pointer;
+}
+
+/* Search Result Page */
+
+.searchResult-hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(216, 26, 26);
+}
+
+.searchResult-hero h2{
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.result-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: auto;
+  width: 300px;
   border-radius: 15px;
+  box-shadow: 3px 3px 10px #00000042;
+}
+
+.result-card h2{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.result-card img{
+  width: 150px;
+  height: auto;
+}
+
+.result-card h3{
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.result-card p{
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 2.5px;
+}
+
+.result-card button{
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+  background-color: rgb(216, 26, 26);
+  color: #fff;
+  transition: .2s all linear;
+  transform: scale(1);
+}
+
+.result-card button:hover{
+  cursor: pointer;
+  transform: scale(.9);
+}
+
+.result-card a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  transition: .2s all linear;
+}
+
+.result-card a:hover{
+  color: rgb(216, 26, 26);
+}
+
+/* Pokedex */
+
+.pokedex-hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(216, 26, 26);
+}
+
+.pokedex-hero h1{
+  color: #fff;
+  padding: 15px;
+  margin: 30px;
+  font-size: 30px;
+}
+
+.pokedex-hero .row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokedex-hero .pokedex-card{
+  display: flex;
+  width: 200px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  margin: 15px 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.pokedex-hero .pokedex-card .card-img-top{
+  width: 120px;
+  height: auto;
+}
+
+.pokedex-hero .pokedex-card p{
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 2.5px;
+}
+
+.pokedex-hero .pokedex-card h5{
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 2.5px;
+}
+
+.pokedex-hero .pokedex-card .edit-delete{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokedex-hero .pokedex-card .edit-delete a img{
+  width: 30px;
+  height: auto;
+  background-color: rgb(100, 167, 255);
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: .2s all linear;
+}
+
+.pokedex-hero .pokedex-card .edit-delete a img:hover{
+  cursor: pointer;
+  background-color: rgb(166, 205, 255);
+}
+
+.pokedex-hero .pokedex-card .edit-delete button{
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.pokedex-hero .pokedex-card .edit-delete button img{
+  width: 30px;
+  height: auto;
+  /* border: none;
+  outline: none; */
+  background-color: red;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition: .2s all linear;
+}
+
+.pokedex-hero .pokedex-card .edit-delete button img:hover{
+  cursor: pointer;
+  background-color: rgb(255, 135, 135);
+}
+
+/* Edit Page */
+
+
+
+/* Footer */
+
+.footer{
+  display: flex;
+  width: 100%;
+  height: 100px;
 }

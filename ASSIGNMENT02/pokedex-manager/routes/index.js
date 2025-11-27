@@ -16,7 +16,7 @@ router.get('/search', async function(req, res) {
   console.log("Searching for:", name);
 
   if (!name) {
-    return res.render("index", { error: "Please enter a Pokémon name" });
+    return res.render("index", { error: "Please enter a Pokemon name!" });
   }
 
   try {
@@ -38,7 +38,7 @@ router.get('/search', async function(req, res) {
 
   } catch (err) {
     console.log(err.message);
-    res.render("index", { error: "Pokémon not found" });
+    res.render("index", { error: "Pokemon not found..." });
   }
 });
 

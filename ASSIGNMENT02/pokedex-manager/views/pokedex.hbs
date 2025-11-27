@@ -1,42 +1,54 @@
-<h1 class="mb-4">My Pokédex</h1>
+<div class="pokedex-hero">
+  <h1>My Pokedex</h1>
 
-{{#if pokedex.length}}
-  <div class="row">
-    {{#each pokedex}}
-      <div class="col-md-3">
-        <div class="card mb-4 shadow-sm">
-          <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}" />
-          <div class="card-body">
-            <h5 class="card-title text-capitalize">{{this.name}}</h5>
-            <p class="card-text"><strong>ID:</strong> {{this.id}}</p>
-            <p>Types:
-              {{#each this.types}}
-                {{this}}
-              {{/each}}
-            </p>
-            <p>HP: {{this.hp}}</p>
-            <p>Attack: {{this.attack}}</p>
-            <p>Defense: {{this.defense}}</p>
-            <p>Height: {{this.height}} m</p>
-            <p>Weight: {{this.weight}} Kg</p>
+  {{#if pokedex.length}}
+    <div class="row">
+      {{#each pokedex}}
+        <div class="pokedex-card">
+          <div>
+            <h5>{{this.name}}</h5>
+            <img
+              src="{{this.image}}"
+              class="card-img-top"
+              alt="{{this.name}}"
+            />
+            <div class="card-body">
+              <p class="card-text"><strong>ID:</strong> {{this.id}}</p>
+              <p>Types:
+                {{#each this.types}}
+                  {{this}}
+                {{/each}}
+              </p>
+              <p>HP: {{this.hp}}</p>
+              <p>Attack: {{this.attack}}</p>
+              <p>Defense: {{this.defense}}</p>
+              <p>Height: {{this.height}} m</p>
+              <p>Weight: {{this.weight}} Kg</p>
 
-            <a href="/edit/{{this.id}}" class="btn btn-warning btn-sm">Edit</a>
+              <div class="edit-delete">
+                <a
+                href="/edit/{{this.id}}"
+                class="btn btn-warning btn-sm"
+              ><img src="/images/pencil.svg" alt=""></a>
 
-            {{!-- <form action="/delete/{{this.id}}" method="POST" class="d-inline">
+              {{!-- <form action="/delete/{{this.id}}" method="POST" class="d-inline">
                             <button class="btn btn-danger btn-sm">Delete</button>
                         </form> --}}
-            <form
-              action="/delete/{{id}}"
-              method="POST"
-              onsubmit="return confirm('Are you sure you want to remove this Pokémon from your Pokédex?');"
-            >
-              <button type="submit">Delete</button>
-            </form>
+              <form
+                action="/delete/{{id}}"
+                method="POST"
+                onsubmit="return confirm('Are you sure you want to remove this Pokemon from your Pokedex?');"
+              >
+                <button type="submit"><img src="/images/delete.svg" alt=""></button>
+              </form>
+              </div>
+              
+            </div>
           </div>
         </div>
-      </div>
-    {{/each}}
-  </div>
-{{else}}
-  <div class="alert alert-info">Your Pokédex is empty.</div>
-{{/if}}
+      {{/each}}
+    </div>
+  {{else}}
+    <div class="alert alert-info">Your Pokedex is empty.</div>
+  {{/if}}
+</div>

@@ -1,12 +1,12 @@
-<div class="text-center">
-    <h1 class="mb-4">Search for a Pokémon</h1>
+<div class="search-hero">
+    <h1>Search for a Pokemon</h1>
 
     {{#if error}}
-        <div class="alert alert-danger">{{error}}</div>
+        <div class="err">{{error}}</div>
     {{/if}}
 
     <form action="/search" method="get">
-        <input type="text" name="name" placeholder="Enter Pokémon name">
+        <input type="text" name="name" placeholder="Enter Pokemon name">
         <button type="submit">Search</button>
     </form>
 </div>
