@@ -256,7 +256,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
   flex-direction: column;
   background-color: rgb(216, 26, 26);
 }
@@ -265,7 +265,7 @@
   color: #fff;
   padding: 15px;
   margin: 30px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .pokedex-hero .row{
@@ -273,6 +273,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pokedex-hero .pokedex-card{
@@ -286,6 +287,7 @@
   margin: 15px 30px;
   text-align: center;
   border-radius: 15px;
+  box-shadow: 3px 3px 10px #00000042;
 }
 
 .pokedex-hero .pokedex-card .card-img-top{
@@ -353,7 +355,91 @@
 
 /* Edit Page */
 
+.edit-hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(216, 26, 26);
+}
 
+.edit-hero h1{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.edit-hero .edit-row-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-hero .edit-row-1 label{
+  font-size: 25px;
+  color: #fff;
+  padding: 15px;
+}
+
+.edit-hero .edit-row-1 input{
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  margin: 15px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.edit-hero .edit-row-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-hero .edit-row-2 button{
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px;
+  width: 50%;
+  transition: .2s all linear;
+  transform: scale(1);
+  background-color: rgb(157, 241, 31);
+}
+
+.edit-hero .edit-row-2 button:hover{
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.edit-hero .edit-row-2 a{
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px;
+  /* width: 50%; */
+  transition: .2s all linear;
+  transform: scale(1);
+  background-color: #fff;
+  color: black;
+  text-align: center;
+}
+
+.edit-hero .edit-row-2 a:hover{
+  transform: scale(0.9);
+}
 
 /* Footer */
 
