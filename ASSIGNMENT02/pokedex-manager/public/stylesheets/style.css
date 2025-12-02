@@ -13,14 +13,14 @@
   width: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #fff;
   /* position: fixed; */
   border-bottom: 1px solid black;
 }
 
 .global-header .left-side{
-  margin-right: 250px;
+  margin: 15px;
 }
 
 .global-header .left-side{
@@ -31,7 +31,7 @@
 .global-header ul{
   display: flex;
   flex-direction: row;
-  margin-left: 405px;
+  margin: 15px;
 }
 
 .global-header li{
@@ -43,6 +43,12 @@
   padding: 15px;
   color: rgb(216, 26, 26);
   text-transform: uppercase;
+  transition: all .2s linear;
+  border-bottom:1px solid #fff;
+}
+
+.global-header a:hover{
+  border-bottom: 1px solid rgb(216, 26, 26);
 }
 
 .global-header .a{
@@ -58,7 +64,16 @@
   transition: all .2s linear;
 }
 
-.global-header ul li .login:hover, .global-header ul li .register:hover{
+.global-header ul li .login{
+  margin-right: 7.5px;
+}
+
+.global-header ul li .register{
+  margin-left: 7.5px;
+  margin-right: 15px;
+}
+
+.global-header ul li .login a:hover, .global-header ul li .register a:hover{
   transform: scale(0.9);
   cursor: pointer;
 }
@@ -485,6 +500,12 @@
   justify-content: center;
 }
 
+.login-hero h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 30px;
+}
+
 .login-hero form{
   display: flex;
   flex-direction: column;
@@ -517,9 +538,10 @@
   padding: 30px;
   color: #fff;
   text-transform: capitalize;
+  font-size: 25px;
 }
 
-.login-hero .login-gh a{
+.login-hero .login-gh button{
   outline: none;
   border: none;
   border-radius: 30px;
@@ -528,7 +550,27 @@
   width: 50%;
   transition: .2s all linear;
   transform: scale(1);
+  background-color: #fff;
+}
+
+.login-hero .login-gh button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.login-hero .login-gh a{
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px;
+  width: auto;
+  transition: .2s all linear;
+  transform: scale(1);
   background-color: rgb(157, 241, 31);
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
 }
 
 .login-hero .login-gh a:hover{
@@ -546,6 +588,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.register-hero form{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  width: 70%
 }
 
 .register-hero form input{
@@ -568,7 +617,7 @@
   border-radius: 30px;
   padding: 10px;
   margin: 15px;
-  width: 50%;
+  width: 70%;
   transition: .2s all linear;
   transform: scale(1);
   background-color: rgb(157, 241, 31);
@@ -590,7 +639,15 @@
   align-items: center;
 }
 
-.footer-left img{
-  width: 300px;
-  height: 300px;
+.footer-left a img{
+  width: 100px;
+  height: 100px;
+}
+
+.footer .portfolio-link a{
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-style: italic;
+  text-align: center;
 }
