@@ -56,8 +56,8 @@
   padding: 0;
 }
 
-.global-header ul li .login a,
-.global-header ul li .register a {
+.global-header ul li .login,
+.global-header ul li .register{
   background-color: rgb(216, 26, 26);
   color: #fff;
   padding: 15px;
@@ -75,8 +75,8 @@
   margin-right: 15px;
 }
 
-.global-header ul li .login a:hover,
-.global-header ul li .register a:hover {
+.global-header .login:hover,
+.global-header .register:hover {
   transform: scale(0.9);
   cursor: pointer;
 }
@@ -516,6 +516,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 70%;
 }
 
 .login-hero form input {
@@ -526,6 +527,7 @@
   border-radius: 30px;
   text-align: center;
   margin: 15px;
+  width: 70%;
 }
 
 .login-hero form input::placeholder {
@@ -617,6 +619,7 @@
   border-radius: 30px;
   text-align: center;
   margin: 15px;
+  width: 70%;
 }
 
 .register-hero form input::placeholder {
