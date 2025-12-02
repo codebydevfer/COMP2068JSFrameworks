@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
   res.render('home', { title: 'Home Page' });
 });
 
-// Search Pokemon (GET recommended)
+// Search Pokemon
 router.get('/search', async function(req, res) {
   const name = req.query.name?.toLowerCase();
 
@@ -43,7 +43,12 @@ router.get('/search', async function(req, res) {
 });
 
 // ADD Pokemon
-router.post('/add', async (req, res) => {
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) return next();
+    res.redirect("/login");
+}
+
+router.post('/add', isLoggedIn, async (req, res) => {
   try {
     await Pokemon.create({
       id: req.body.id,
@@ -63,7 +68,7 @@ router.post('/add', async (req, res) => {
 });
 
 // View all Pokemon
-router.get('/pokedex', async (req, res) => {
+router.get('/pokedex', isLoggedIn, async (req, res) => {
   const pokedex = await Pokemon.find();
   res.render("pokedex", { pokedex });
 });
