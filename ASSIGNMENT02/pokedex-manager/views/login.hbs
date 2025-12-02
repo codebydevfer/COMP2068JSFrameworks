@@ -1,10 +1,14 @@
-<h2>Login</h2>
+<div class="login-hero">
+  <h2>Login</h2>
 
-<form action="/login" method="POST">
-    <input name="username" placeholder="Username">
-    <input name="password" type="password" placeholder="Password">
+  <form action="/login" method="POST">
+    <input name="username" placeholder="Username" />
+    <input name="password" type="password" placeholder="Password" />
+    <button>Login</button>
+  </form>
 
-    <button class="btn btn-primary">Login</button>
-</form>
-
-<a href="/auth/github" class="btn btn-dark mt-3">Login with GitHub</a>
+  <div class="login-gh">
+    <p>Or</p>
+    <a href="/auth/github">Login with GitHub</a>
+  </div>
+</div>

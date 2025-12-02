@@ -23,10 +23,10 @@
         <input type="hidden" name="defense" value="{{pokemon.defense}}" />
         <input type="hidden" name="height" value="{{pokemon.height}}" />
         <input type="hidden" name="weight" value="{{pokemon.weight}}" />
-        <button class="btn btn-success">Add to My Pokédex</button>
+        <button class="addTo-btn">Add to My Pokedex</button>
       </form>
     {{else}}
-      <a href="/login"><button class="btn btn-secondary" disabled></button>Login to add</a>
+      <a href="/login"><button class="loginToAdd-btn" disabled></button>Login to add</a>
     {{/if}}
 
     <a href="/search">Back</a>

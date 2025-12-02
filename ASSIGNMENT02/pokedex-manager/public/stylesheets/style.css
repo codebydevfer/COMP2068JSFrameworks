@@ -16,10 +16,11 @@
   justify-content: center;
   background-color: #fff;
   /* position: fixed; */
+  border-bottom: 1px solid black;
 }
 
 .global-header .left-side{
-  margin-right: 300px;
+  margin-right: 250px;
 }
 
 .global-header .left-side{
@@ -30,7 +31,7 @@
 .global-header ul{
   display: flex;
   flex-direction: row;
-  margin-left: 465px;
+  margin-left: 405px;
 }
 
 .global-header li{
@@ -46,6 +47,20 @@
 
 .global-header .a{
   padding: 0;
+}
+
+.global-header ul li .login, .global-header ul li .register{
+  background-color: rgb(216, 26, 26);
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: all .2s linear;
+}
+
+.global-header ul li .login:hover, .global-header ul li .register:hover{
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .header-title{
@@ -231,6 +246,23 @@
 }
 
 .result-card button:hover{
+  cursor: pointer;
+  transform: scale(.9);
+}
+
+.result-card .addTo-btn, .result-card .loginToAdd-btn{
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgb(216, 26, 26);
+  color: #fff;
+  transition: .2s all linear;
+  transform: scale(1);
+}
+
+.result-card .addTo-btn:hover, .result-card .loginToAdd-btn:hover{
   cursor: pointer;
   transform: scale(.9);
 }
@@ -441,10 +473,124 @@
   transform: scale(0.9);
 }
 
+/* Login Page */
+
+.login-hero{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(216, 26, 26);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-hero form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-hero form input{
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  margin: 15px;
+}
+
+.login-hero form input::placeholder{
+  text-align: center;
+}
+
+.login-hero .login-gh{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-hero .login-gh p{
+  padding: 30px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.login-hero .login-gh a{
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px;
+  width: 50%;
+  transition: .2s all linear;
+  transform: scale(1);
+  background-color: rgb(157, 241, 31);
+}
+
+.login-hero .login-gh a:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Register Page */
+
+.register-hero{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(216, 26, 26);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-hero form input{
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  margin: 15px;
+}
+
+.register-hero form input::placeholder{
+  text-align: center;
+}
+
+.register-hero form button{
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px;
+  width: 50%;
+  transition: .2s all linear;
+  transform: scale(1);
+  background-color: rgb(157, 241, 31);
+}
+
+.register-hero form button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 /* Footer */
 
 .footer{
   display: flex;
   width: 100%;
   height: 100px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-left img{
+  width: 300px;
+  height: 300px;
 }
