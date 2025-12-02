@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -7,7 +7,7 @@
 
 /* Header */
 
-.global-header{
+.global-header {
   display: flex;
   height: 100px;
   width: 100%;
@@ -19,72 +19,75 @@
   border-bottom: 1px solid black;
 }
 
-.global-header .left-side{
+.global-header .left-side {
   margin: 15px;
 }
 
-.global-header .left-side{
+.global-header .left-side {
   display: flex;
   flex-direction: row;
 }
 
-.global-header ul{
+.global-header ul {
   display: flex;
   flex-direction: row;
   margin: 15px;
 }
 
-.global-header li{
+.global-header li {
   list-style: none;
 }
 
-.global-header a{
+.global-header li a {
   text-decoration: none;
   padding: 15px;
   color: rgb(216, 26, 26);
   text-transform: uppercase;
-  transition: all .2s linear;
-  border-bottom:1px solid #fff;
+  transition: all 0.2s linear;
+  border-bottom: 2px solid #fff;
+  border-width: 50%;
 }
 
-.global-header a:hover{
-  border-bottom: 1px solid rgb(216, 26, 26);
+.global-header li a:hover {
+  border-bottom: 2px solid rgb(216, 26, 26);
 }
 
-.global-header .a{
+.global-header .a {
   padding: 0;
 }
 
-.global-header ul li .login, .global-header ul li .register{
+.global-header ul li .login a,
+.global-header ul li .register a {
   background-color: rgb(216, 26, 26);
   color: #fff;
   padding: 15px;
   border-radius: 30px;
   transform: scale(1);
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-.global-header ul li .login{
+.global-header ul li .login {
   margin-right: 7.5px;
 }
 
-.global-header ul li .register{
+.global-header ul li .register {
   margin-left: 7.5px;
   margin-right: 15px;
 }
 
-.global-header ul li .login a:hover, .global-header ul li .register a:hover{
+.global-header ul li .login a:hover,
+.global-header ul li .register a:hover {
   transform: scale(0.9);
   cursor: pointer;
 }
 
-.header-title{
+.header-title {
   color: rgb(216, 26, 26);
   font-size: 40px;
   padding: 10px;
 }
 
-.global-header img{
+.global-header img {
   width: 60px;
   height: auto;
   padding: 10px;
@@ -95,7 +98,7 @@
 
 /* Home Page */
 
-.home-pg-hero{
+.home-pg-hero {
   display: flex;
   height: 100vh;
   width: 100%;
@@ -105,33 +108,33 @@
   justify-content: center;
 }
 
-.home-pg-hero h1{
+.home-pg-hero h1 {
   font-size: 40px;
   padding: 10px;
   color: #fff;
 }
 
-.home-pg-hero p{
+.home-pg-hero p {
   font-size: 20px;
   padding: 10px;
   padding-bottom: 30px;
   color: #fff;
 }
 
-.home-pg-hero a img{
+.home-pg-hero a img {
   width: 120px;
   height: auto;
   transform: scale(1);
-  transition: .2s all linear;
+  transition: 0.2s all linear;
 }
 
-.home-pg-hero a img:hover{
+.home-pg-hero a img:hover {
   transform: scale(1.1);
 }
 
 /* Add/Search Page */
 
-.search-hero{
+.search-hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,30 +144,30 @@
   background-color: rgb(216, 26, 26);
 }
 
-.search-hero h1{
+.search-hero h1 {
   color: #fff;
   font-size: 40px;
   padding: 10px;
 }
 
-.search-hero form{
+.search-hero form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.search-hero .err{
+.search-hero .err {
   color: #fff;
   font-size: 20px;
   padding: 10px;
 }
 
-.search-hero form{
+.search-hero form {
   padding: 20px;
 }
 
-.search-hero form input{
+.search-hero form input {
   border: none;
   outline: none;
   padding: 15px;
@@ -174,29 +177,29 @@
   margin: 15px;
 }
 
-.search-hero form input::placeholder{
+.search-hero form input::placeholder {
   text-align: center;
 }
 
-.search-hero form button{
+.search-hero form button {
   outline: none;
   border: none;
   border-radius: 30px;
   padding: 10px;
   margin: 15px;
   width: 50%;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
   transform: scale(1);
 }
 
-.search-hero form button:hover{
-  transform: scale(0.90);
+.search-hero form button:hover {
+  transform: scale(0.9);
   cursor: pointer;
 }
 
 /* Search Result Page */
 
-.searchResult-hero{
+.searchResult-hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,13 +209,13 @@
   background-color: rgb(216, 26, 26);
 }
 
-.searchResult-hero h2{
+.searchResult-hero h2 {
   padding: 20px;
   color: white;
   font-size: 30px;
 }
 
-.result-card{
+.result-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,30 +227,30 @@
   box-shadow: 3px 3px 10px #00000042;
 }
 
-.result-card h2{
+.result-card h2 {
   font-size: 20px;
   padding: 10px;
 }
 
-.result-card img{
+.result-card img {
   width: 150px;
   height: auto;
 }
 
-.result-card h3{
+.result-card h3 {
   text-transform: capitalize;
   font-size: 20px;
   padding: 5px;
   margin: 10px;
 }
 
-.result-card p{
+.result-card p {
   text-transform: capitalize;
   font-size: 15px;
   padding: 2.5px;
 }
 
-.result-card button{
+.result-card button {
   outline: none;
   border: none;
   border-radius: 30px;
@@ -256,16 +259,17 @@
   /* margin-bottom: 10px; */
   background-color: rgb(216, 26, 26);
   color: #fff;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
   transform: scale(1);
 }
 
-.result-card button:hover{
+.result-card button:hover {
   cursor: pointer;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
-.result-card .addTo-btn, .result-card .loginToAdd-btn{
+.result-card .addTo-btn,
+.result-card .loginToAdd-btn {
   outline: none;
   border: none;
   border-radius: 30px;
@@ -273,32 +277,33 @@
   margin-top: 20px;
   background-color: rgb(216, 26, 26);
   color: #fff;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
   transform: scale(1);
 }
 
-.result-card .addTo-btn:hover, .result-card .loginToAdd-btn:hover{
+.result-card .addTo-btn:hover,
+.result-card .loginToAdd-btn:hover {
   cursor: pointer;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
-.result-card a{
+.result-card a {
   text-decoration: none;
   font-size: 15px;
   color: black;
   padding: 15px;
   margin-bottom: 10px;
   margin-top: 5px;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
 }
 
-.result-card a:hover{
+.result-card a:hover {
   color: rgb(216, 26, 26);
 }
 
 /* Pokedex */
 
-.pokedex-hero{
+.pokedex-hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,14 +313,14 @@
   background-color: rgb(216, 26, 26);
 }
 
-.pokedex-hero h1{
+.pokedex-hero h1 {
   color: #fff;
   padding: 15px;
   margin: 30px;
   font-size: 40px;
 }
 
-.pokedex-hero .row{
+.pokedex-hero .row {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -323,7 +328,7 @@
   flex-wrap: wrap;
 }
 
-.pokedex-hero .pokedex-card{
+.pokedex-hero .pokedex-card {
   display: flex;
   width: 200px;
   height: auto;
@@ -337,24 +342,24 @@
   box-shadow: 3px 3px 10px #00000042;
 }
 
-.pokedex-hero .pokedex-card .card-img-top{
+.pokedex-hero .pokedex-card .card-img-top {
   width: 120px;
   height: auto;
 }
 
-.pokedex-hero .pokedex-card p{
+.pokedex-hero .pokedex-card p {
   font-size: 15px;
   text-transform: capitalize;
   padding: 2.5px;
 }
 
-.pokedex-hero .pokedex-card h5{
+.pokedex-hero .pokedex-card h5 {
   font-size: 20px;
   text-transform: capitalize;
   padding: 2.5px;
 }
 
-.pokedex-hero .pokedex-card .edit-delete{
+.pokedex-hero .pokedex-card .edit-delete {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -362,28 +367,28 @@
   padding: 10px;
 }
 
-.pokedex-hero .pokedex-card .edit-delete a img{
+.pokedex-hero .pokedex-card .edit-delete a img {
   width: 30px;
   height: auto;
   background-color: rgb(100, 167, 255);
   padding: 5px;
   margin-right: 10px;
   border-radius: 50%;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
 }
 
-.pokedex-hero .pokedex-card .edit-delete a img:hover{
+.pokedex-hero .pokedex-card .edit-delete a img:hover {
   cursor: pointer;
   background-color: rgb(166, 205, 255);
 }
 
-.pokedex-hero .pokedex-card .edit-delete button{
+.pokedex-hero .pokedex-card .edit-delete button {
   border: none;
   outline: none;
   background: none;
 }
 
-.pokedex-hero .pokedex-card .edit-delete button img{
+.pokedex-hero .pokedex-card .edit-delete button img {
   width: 30px;
   height: auto;
   /* border: none;
@@ -392,17 +397,17 @@
   padding: 5px;
   margin-left: 10px;
   border-radius: 50%;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
 }
 
-.pokedex-hero .pokedex-card .edit-delete button img:hover{
+.pokedex-hero .pokedex-card .edit-delete button img:hover {
   cursor: pointer;
   background-color: rgb(255, 135, 135);
 }
 
 /* Edit Page */
 
-.edit-hero{
+.edit-hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,7 +417,7 @@
   background-color: rgb(216, 26, 26);
 }
 
-.edit-hero h1{
+.edit-hero h1 {
   text-align: center;
   color: #fff;
   font-size: 40px;
@@ -420,20 +425,20 @@
   margin: 20px 0;
 }
 
-.edit-hero .edit-row-1{
+.edit-hero .edit-row-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.edit-hero .edit-row-1 label{
+.edit-hero .edit-row-1 label {
   font-size: 25px;
   color: #fff;
   padding: 15px;
 }
 
-.edit-hero .edit-row-1 input{
+.edit-hero .edit-row-1 input {
   border: none;
   outline: none;
   padding: 15px;
@@ -445,31 +450,31 @@
   text-transform: capitalize;
 }
 
-.edit-hero .edit-row-2{
+.edit-hero .edit-row-2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.edit-hero .edit-row-2 button{
+.edit-hero .edit-row-2 button {
   outline: none;
   border: none;
   border-radius: 30px;
   padding: 10px;
   margin: 15px;
   width: 50%;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
   transform: scale(1);
   background-color: rgb(157, 241, 31);
 }
 
-.edit-hero .edit-row-2 button:hover{
+.edit-hero .edit-row-2 button:hover {
   transform: scale(0.9);
   cursor: pointer;
 }
 
-.edit-hero .edit-row-2 a{
+.edit-hero .edit-row-2 a {
   text-decoration: none;
   outline: none;
   border: none;
@@ -477,20 +482,20 @@
   padding: 10px;
   margin: 15px;
   /* width: 50%; */
-  transition: .2s all linear;
+  transition: 0.2s all linear;
   transform: scale(1);
   background-color: #fff;
   color: black;
   text-align: center;
 }
 
-.edit-hero .edit-row-2 a:hover{
+.edit-hero .edit-row-2 a:hover {
   transform: scale(0.9);
 }
 
 /* Login Page */
 
-.login-hero{
+.login-hero {
   display: flex;
   height: 100vh;
   width: 100%;
@@ -501,19 +506,19 @@
 }
 
 .login-hero h2 {
-    color: #fff;
-    font-size: 30px;
-    padding: 30px;
+  color: #fff;
+  font-size: 30px;
+  padding: 30px;
 }
 
-.login-hero form{
+.login-hero form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.login-hero form input{
+.login-hero form input {
   border: none;
   outline: none;
   padding: 15px;
@@ -523,64 +528,64 @@
   margin: 15px;
 }
 
-.login-hero form input::placeholder{
+.login-hero form input::placeholder {
   text-align: center;
 }
 
-.login-hero .login-gh{
+.login-hero .login-gh {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.login-hero .login-gh p{
+.login-hero .login-gh p {
   padding: 30px;
   color: #fff;
   text-transform: capitalize;
   font-size: 25px;
 }
 
-.login-hero .login-gh button{
+.login-hero button {
   outline: none;
   border: none;
   border-radius: 30px;
   padding: 10px;
   margin: 15px;
   width: 50%;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
   transform: scale(1);
   background-color: #fff;
 }
 
-.login-hero .login-gh button:hover{
+.login-hero button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.login-hero .login-gh a{
+.login-hero .login-gh a {
   outline: none;
   border: none;
   border-radius: 30px;
-  padding: 10px;
+  padding: 15px;
   margin: 15px;
   width: auto;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
   transform: scale(1);
   background-color: rgb(157, 241, 31);
   text-decoration: none;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
-.login-hero .login-gh a:hover{
+.login-hero .login-gh a:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
 /* Register Page */
 
-.register-hero{
+.register-hero {
   display: flex;
   height: 100vh;
   width: 100%;
@@ -590,14 +595,21 @@
   justify-content: center;
 }
 
-.register-hero form{
+.register-hero h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 30px;
+}
+
+.register-hero form {
   display: flex;
   align-items: center;
   justify-self: center;
-  width: 70%
+  width: 70%;
+  flex-direction: column;
 }
 
-.register-hero form input{
+.register-hero form input {
   border: none;
   outline: none;
   padding: 15px;
@@ -607,47 +619,49 @@
   margin: 15px;
 }
 
-.register-hero form input::placeholder{
+.register-hero form input::placeholder {
   text-align: center;
 }
 
-.register-hero form button{
+.register-hero form button {
   outline: none;
   border: none;
   border-radius: 30px;
   padding: 10px;
   margin: 15px;
   width: 70%;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
   transform: scale(1);
   background-color: rgb(157, 241, 31);
 }
 
-.register-hero form button:hover{
+.register-hero form button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
 /* Footer */
 
-.footer{
+.footer {
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 130px;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
-.footer-left a img{
+.footer-left a img {
   width: 100px;
   height: 100px;
+  padding: 20px;
 }
 
-.footer .portfolio-link a{
+.footer .portfolio-link a {
   text-decoration: none;
   font-size: 25px;
   color: black;
   font-style: italic;
   text-align: center;
+  padding: 20px;
 }
