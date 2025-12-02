@@ -59,7 +59,8 @@ router.post('/add', isLoggedIn, async (req, res) => {
       attack: req.body.attack,
       defense: req.body.defense,
       height: req.body.height,
-      weight: req.body.weight
+      weight: req.body.weight,
+      user: req.user._id
     });
     res.redirect('/pokedex');
   } catch (err) {
@@ -69,7 +70,7 @@ router.post('/add', isLoggedIn, async (req, res) => {
 
 // View all Pokemon
 router.get('/pokedex', isLoggedIn, async (req, res) => {
-  const pokedex = await Pokemon.find();
+  const pokedex = await Pokemon.find({ user: req.user._id });
   res.render("pokedex", { pokedex });
 });
 

@@ -9,7 +9,8 @@ const PokemonSchema = new mongoose.Schema({
     attack: Number,
     defense: Number,
     height: Number,
-    weight: Number
+    weight: Number,
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 });
 
 module.exports = mongoose.model("Pokemon", PokemonSchema);
