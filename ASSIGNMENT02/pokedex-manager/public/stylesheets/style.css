@@ -269,7 +269,7 @@
 }
 
 .result-card .addTo-btn,
-.result-card .loginToAdd-btn {
+.result-card .loginTo-add {
   outline: none;
   border: none;
   border-radius: 30px;
@@ -282,7 +282,7 @@
 }
 
 .result-card .addTo-btn:hover,
-.result-card .loginToAdd-btn:hover {
+.result-card .loginTo-add:hover {
   cursor: pointer;
   transform: scale(0.9);
 }
@@ -403,6 +403,13 @@
 .pokedex-hero .pokedex-card .edit-delete button img:hover {
   cursor: pointer;
   background-color: rgb(255, 135, 135);
+}
+
+.pokedex-hero .empyt-pkdx p{
+  font-size: 25px;
+  color: white;
+  font-style: italic;
+  padding: 15px;
 }
 
 /* Edit Page */
@@ -660,11 +667,16 @@
   padding: 20px;
 }
 
-.footer .portfolio-link a {
+.footer-right .portfolio-link a {
   text-decoration: none;
   font-size: 25px;
   color: black;
   font-style: italic;
   text-align: center;
   padding: 20px;
+  transition: all .2s linear;
+}
+
+.footer-right .portfolio-link a:hover{
+  color: rgb(100, 167, 255);
 }
