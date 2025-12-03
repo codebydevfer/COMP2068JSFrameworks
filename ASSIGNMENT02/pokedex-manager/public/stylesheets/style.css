@@ -62,7 +62,6 @@
   color: #fff;
   padding: 15px;
   border-radius: 30px;
-  transform: scale(1);
   transition: all 0.2s linear;
 }
 
@@ -73,12 +72,6 @@
 .global-header ul li .register {
   margin-left: 7.5px;
   margin-right: 15px;
-}
-
-.global-header .login:hover,
-.global-header .register:hover {
-  transform: scale(0.9);
-  cursor: pointer;
 }
 
 .header-title {
@@ -667,7 +660,7 @@
   padding: 20px;
 }
 
-.footer-right .portfolio-link a {
+.footer .footer-right a {
   text-decoration: none;
   font-size: 25px;
   color: black;
@@ -677,6 +670,6 @@
   transition: all .2s linear;
 }
 
-.footer-right .portfolio-link a:hover{
+.footer .footer-right a:hover{
   color: rgb(100, 167, 255);
 }
