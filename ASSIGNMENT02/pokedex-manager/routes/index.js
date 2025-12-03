@@ -122,8 +122,7 @@ router.post("/edit/:id", isLoggedIn, async (req, res) => {
       user: req.user._id,
     },
     {
-      name: req.body.name,
-      image: req.body.image,
+      name: req.body.name
     }
   );
 
